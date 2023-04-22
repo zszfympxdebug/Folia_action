@@ -29,8 +29,8 @@ jobs:
       - name: Build
         run: ./gradlew build
       - name: jar
-        run: ./gradlew jar
+        run: ./gradlew createMojmapPaperclipJar
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.1.2
         with:
-          path: 'build/libs'
+          path: 'build'
